@@ -1,0 +1,762 @@
+/* font-family: 'Allura', cursive;
+font-family: 'Gabriela', serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+@font-face {
+  font-family: "Gabriola";
+  src: url("../font/Gabriola.ttf");
+}
+p,
+span {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#tropis {
+  display: flex;
+  justify-content: center;
+}
+
+.container-width {
+  position: relative;
+  width: 768px;
+  max-width: 768px;
+}
+
+.section-bg {
+  background-color: #2d2d2d;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 0.5em;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background: #fefefe;
+}
+
+.judul {
+  font-family: "Allura", cursive;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 30px;
+  color: #c19e67;
+}
+
+.container-section {
+  width: 100% !important;
+  min-height: 100vh !important;
+  padding: 20px 20px 80px !important;
+  position: relative !important;
+  display: grid !important;
+}
+
+.content-box {
+  width: 100%;
+  padding: 90px 0px;
+}
+/* ======================== banner ======================== */
+/* ======================== cover ======================== */
+
+#cover {
+  display: flex;
+  justify-content: center;
+}
+
+#landing {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background: #2d2d2d;
+  z-index: 999;
+  min-height: 100vh;
+  width: 100%;
+  transition: opacity 1s ease-in-out;
+  padding: 20px;
+  display: grid;
+}
+
+#landing .cover-box {
+  width: 100%;
+  border: 1.5px solid #ab9789 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100% !important;
+}
+
+.box-ornament-atas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.box-ornament-bawah {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cover-content {
+  text-align: center;
+}
+
+.ornament-cover-bawah {
+  bottom: 0;
+  margin-bottom: -110px;
+}
+
+.ornament-cover-atas {
+  margin-top: -70px;
+  margin-left: 35px;
+  width: 400px;
+}
+
+.cover-title h1 {
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  margin: 0px;
+  color: #ffffff;
+}
+
+#cover h3 {
+  margin: 0px;
+  margin-top: -10px;
+}
+
+.text-dari {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  margin-top: -10px;
+  color: #939393;
+}
+
+.text-untuk {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin: -10px auto 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding-bottom: 5px;
+  width: 80px;
+  display: block;
+  color: #939393;
+  border-bottom: 1.5px solid #f4d8ba;
+}
+
+.cover-content span {
+  color: #939393;
+  font-family: "Montserrat", sans-serif;
+}
+
+#btn-cover {
+  background: #c19e67;
+  border: none;
+  color: #ffffff;
+  padding: 5px 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #2d2d2d;
+}
+
+#cover .pengantin-box h3 {
+  color: #be9f62 !important;
+}
+/* ======================== akhir cover ======================== */
+#banner .container-banner {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 20px 20px 80px;
+}
+
+#banner {
+  margin-top: 0px !important;
+}
+
+.ornament-atas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 9;
+}
+
+.ornament-atas img {
+  margin-top: -50px;
+  margin-left: 35px;
+  width: 235px;
+}
+
+.ornament-bawah {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.ornament-bawah img {
+  bottom: 0;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.banner-box {
+  width: 100%;
+  height: 100%;
+  background: #cccccc;
+  position: relative;
+}
+.banner-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-content-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background: #00000085;
+}
+
+.banner-content {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #ab9789;
+  text-align: center;
+}
+
+.banner-content h2 {
+  font-family: "Allura", cursive;
+  color: #dd9c45;
+  font-size: 28px;
+  font-weight: normal;
+  padding: 40px 0px 10px;
+  margin-top: 0;
+}
+
+.banner-content p {
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+}
+/* ======================== akhir banner ======================== */
+/* ======================== pengantin ======================== */
+.img-pengantin {
+  width: 150px;
+  object-fit: cover;
+  height: 150px;
+  border-radius: 90px;
+  margin-top: 9px;
+  padding: 5px;
+  border: 3px solid #f4d8ba;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.pengantin-content-width {
+  width: 300px;
+}
+
+.pengantin-box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pengantin-box h3 {
+  margin-top: 15px;
+  font-family: Gabriola;
+  text-transform: none;
+  font-size: 30px;
+  color: #dd9c45;
+}
+
+.pengantin-box p {
+  margin-top: 5px;
+  font-family: "Montserrat", sans-serif;
+  color: #d6d6d6;
+  font-size: 12px;
+}
+
+.dengan {
+  display: flex;
+  justify-content: center;
+}
+
+.dengan h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+  color: #dbdbdb;
+}
+/* ======================== akhir pengantin ======================== */
+/* ======================== waktu ======================== */
+#acara {
+  text-align: center;
+}
+
+#acara .content-box {
+  width: 100%;
+  padding: 90px 0px;
+  border: 1.5px solid #ab9789 !important;
+}
+
+#salam-pembuka {
+  margin-top: 30px;
+}
+
+#salam-pembuka h4 {
+  font-family: "Allura", cursive;
+  font-size: 27px;
+  color: #c19e67;
+}
+
+#salam-pembuka p {
+  color: #999999;
+  font-family: Gabriola;
+  font-size: 18px;
+}
+
+#button-acara {
+  margin-top: 20px;
+}
+
+.btn-waktu-pernikahan,
+.btn-waktu-resepsi {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.separator-tengah {
+  width: 2px;
+  height: 100%;
+  background-color: #ffffff;
+  display: block;
+  margin: 0 auto;
+}
+
+.h5-acara {
+  color: #999999;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.p-acara {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-top: 8px;
+  color: #dd9c45;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+#acara-container {
+  margin: 20px 0px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#acara-scroll {
+  width: 250px;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.acara-detail {
+  width: 500px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  transform: translateX(0px);
+}
+
+#pernikahan,
+#resepsi {
+  width: 250px;
+  display: inline-block;
+  white-space: normal;
+}
+
+.waktu-box::after,
+.waktu-box::after,
+.waktu-box::after {
+  content: ":";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+}
+
+.waktu span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.waktu div {
+  color: #c4c4c4;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: -5px;
+}
+/* ======================== akhir waktu ======================== */
+/* ======================== maps ======================== */
+#maps {
+  text-align: center;
+}
+
+#maps-box {
+  margin-top: 30px;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+}
+
+#maps-pernikahan,
+#maps-resepsi {
+  width: 100% !important;
+}
+
+.btn-pernikahan,
+.btn-resepsi {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+#button-maps {
+  margin-top: 30px;
+}
+
+.btn-maps {
+  margin: 0;
+  margin-top: 30px;
+  background: #c29f69;
+  border: 1px solid #c29f69;
+  border-radius: 0px;
+  color: #000000;
+}
+.btn-maps:hover {
+  margin: 0;
+  margin-top: 30px;
+  border: 1px solid #c29f69;
+  background-color: transparent;
+  color: white;
+  border-radius: 0px;
+}
+
+.maps-container {
+  width: 100% !important;
+  height: 500px !important;
+  padding: 15px;
+  border: 1.5px solid #ab9789 !important;
+}
+
+.maps-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+/* ======================== akhir maps ======================== */
+/* ======================== video ======================== */
+#video {
+  text-align: center;
+}
+
+#video-box {
+  margin-top: 30px;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container {
+  height: 500px;
+  width: 100%;
+}
+/* ======================== akhir video ======================== */
+/* ======================== gallery ======================== */
+#gallery {
+  text-align: center;
+}
+
+#gallery-box {
+  margin-top: 30px;
+}
+
+.img-gallery {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.carousel__track,
+.fancybox__counter,
+.fancybox__button--thumbs,
+/* .fancybox__button--slideshow, */
+.fancybox__button--fullscreen,
+.fancybox__button--zoom {
+  display: none !important;
+}
+/* ======================== akhir gallery ======================== */
+/* ======================== salam penutup ======================== */
+#salam-penutup {
+  text-align: center;
+}
+
+#salam-penutup-box {
+  width: 100% !important;
+}
+
+#salam-penutup p {
+  color: #999999;
+  font-family: Gabriola;
+  font-size: 18px;
+}
+
+#salam-penutup h4 {
+  font-family: "Allura", cursive;
+  font-size: 27px;
+  color: #c19e67;
+}
+
+/* ======================== akhir salam penutup ======================== */
+/* ======================== protokol ======================== */
+#protokol {
+  background-color: #e5e5e5;
+  margin-top: 0.5em;
+  padding: 40px 15px;
+  text-align: center;
+}
+
+#protokol-box {
+  width: 100% !important;
+}
+
+.protokol-tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#protokol h4 {
+  font-family: "Gabriela", serif;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #111111;
+}
+#protokol p,
+#protokol span {
+  color: #626262;
+}
+
+#protokol span {
+  text-align: left !important;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.img-protokol {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.container-acara {
+  margin: 0;
+  margin-top: 30px;
+  padding: 40px;
+}
+/* ======================== akhir protokol ======================== */
+/* ========================  buku tamu ======================== */
+#buku-tamu {
+  text-align: center;
+}
+
+#wedding-gift-box,
+#buku-tamu-box {
+  width: 100% !important;
+}
+
+#buku-tamu-box {
+  padding-top: 90px;
+}
+
+.img-qr {
+  margin-top: 15px;
+  width: 200px;
+}
+
+.form-buku-tamu {
+  margin-top: 15px;
+}
+
+#nama,
+#pesan,
+#kehadiran {
+  border-radius: 2px;
+  border: 1px solid #c6ad7b;
+}
+
+.btn-tamu {
+  background: #c29f69;
+  border: 1px solid #c29f69;
+  border-radius: 0px;
+  color: #000000;
+  padding: 5px 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  border-radius: 0px;
+}
+
+.btn-tamu:hover {
+  border: 1px solid #c29f69;
+  background-color: transparent;
+  color: white;
+  border-radius: 0px;
+}
+
+#footer-box {
+  margin-top: 30px;
+}
+
+#footer-box a {
+  color: #a0a0a0;
+  text-decoration: underline;
+  font-family: "Montserrat", sans-serif;
+}
+
+#footer-box p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  margin: 0;
+  color: #b8b7b7;
+}
+
+#footer-box .btn-footer {
+  margin: 0;
+  margin-top: 40px;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 0px;
+}
+
+/* ======================== akhir buku tamu ======================== */
+/* ======================== lagu ======================== */
+
+#btn-music {
+  border: none;
+  background: transparent;
+  padding: 5px 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  position: fixed;
+  bottom: 70px;
+  right: 0;
+  z-index: 999;
+  cursor: pointer;
+}
+
+#player {
+  display: none;
+}
+/* ======================== akhir lagu ======================== */
+/* ======================== navbar ======================== */
+.navbar-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #2d2d2d;
+  z-index: 10;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.navbar-container .navbar-menu.active {
+  background: #444444;
+  color: #a07e55;
+}
+
+.navbar-container .navbar-menu {
+  display: inline-block;
+  width: 85px;
+  text-align: center;
+  font-weight: 700 !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 7px;
+  padding: 13px 10px 5px;
+  color: #99857a;
+}
+
+.navbar-container .navbar-menu i {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+/* ======================== akhir navbar ======================== */
+@media (max-width: 768px) {
+  .video-container {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  .video-container {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  .img-protokol {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  #protokol span {
+    font-size: 13px;
+  }
+
+  .video-container {
+    height: 200px;
+  }
+}
